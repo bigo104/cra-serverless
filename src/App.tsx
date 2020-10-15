@@ -4,6 +4,8 @@ import { Route, Switch } from 'react-router'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import { Details } from './pages/Details'
+import { Delete } from './pages/Delete'
+
 import { NotFound } from './pages/Error'
 import { Home } from './pages/Home'
 
@@ -40,7 +42,7 @@ const App: React.FC = () => (
       <Switch>
         <Route path="/details/:id" component={Details} />
         <Route path="/" component={Home} exact />
-
+        <Route path="/delete" component={Delete}/>
         <Route component={NotFound} />
       </Switch>
 

@@ -69,6 +69,16 @@ export const Navigation = () => {
             Dynamic
           </StyledLink>
         </ListItem>
+
+        <ListItem>
+          <StyledLink
+            to={'/delete'}
+            activeClassName={activeClassName}
+            isActive={isDetailsActive}
+          >
+            Delete
+          </StyledLink>
+        </ListItem>
       </List>
     </Wrapper>
   )
